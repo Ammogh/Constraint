@@ -6,8 +6,8 @@ class Chain{
         stiffness: 0.04 ,
         length: 10
     }
-    var chain = Constraint.create(options);
-    World.add(world,chain);
+    this.chain = Constraint.create(options);
+    World.add(world,this.chain);
 }
 display(){
     var pointA = this.chain.bodyA.position;
